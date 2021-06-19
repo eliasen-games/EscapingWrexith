@@ -8,4 +8,3 @@ craftingStations = [oAlchemy,
 					oForge,
 					oSpellDesk]
 level = 1
-//generateLevel(level)

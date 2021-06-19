@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function get_input(inputs){
-	var inputs = array_create(12, 0)
+	inputs = array_create(12, 0)
 	//released is default for checking if a button was pressed
 	//Select
 	inputs[0] = mouse_check_button_released(mb_left)

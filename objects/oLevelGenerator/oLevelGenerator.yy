@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Level Generation",
-    "path": "folders/Objects/Level Generation.yy",
+    "path": "folders/Objects/Behind the Scenes/Level Generation.yy",
   },
   "resourceVersion": "1.0",
   "name": "oLevelGenerator",

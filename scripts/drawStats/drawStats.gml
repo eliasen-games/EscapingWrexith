@@ -25,12 +25,12 @@ function drawStats(member, i, startX, startY, barWidth){
 		agl += "+" + string(round(member.buff_slot.agility_bonus))
 		int += "+" + string(round(member.buff_slot.intelligence_bonus))
 	}
-	draw_set_halign(fa_right)
+	draw_set_halign(fa_left)
 	var nameWidth = string_width(name)*2
 	draw_set_color(c_red)
 	draw_text(startX + nameWidth, startY-16, str)
 	draw_set_color(c_aqua)
-	draw_set_halign(fa_left)
+	draw_set_halign(fa_right)
 	draw_text(startX + barWidth - nameWidth, startY-16, int)
 	draw_set_halign(fa_middle)
 	draw_set_color(c_lime)
