@@ -8,6 +8,7 @@ camMaxWidth = 1920
 camMaxHeight = 1080
 camMinWidth = sprite_get_height(sCell) * 16
 camMinHeight = sprite_get_height(sCell) * 9
+camSpeed = 8
 
 camera = camera_create()
 var vm  = matrix_build_lookat(x,y,-100, 

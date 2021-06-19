@@ -16,12 +16,18 @@ function get_input(inputs){
 	//Consumable
 	inputs[7] = keyboard_check_released(ord("Q"))
 	//Spell
-	inputs[8] = keyboard_check_released(ord("W"))
+	inputs[8] = keyboard_check_released(ord("E"))
 	//Key Confirm
 	inputs[9] = keyboard_check_released(vk_tab)
+	//Camera Controls
 	//Cam Zoom
 	inputs[10] = mouse_wheel_down()
 	inputs[11] = mouse_wheel_up()
+	//Cam Movement
+	inputs[12] = keyboard_check(ord("W"))
+	inputs[13] = keyboard_check(ord("A"))
+	inputs[14] = keyboard_check(ord("S"))
+	inputs[15] = keyboard_check(ord("D"))
 	
 	return inputs
 }

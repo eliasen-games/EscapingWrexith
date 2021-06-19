@@ -7,8 +7,8 @@ function switch_characters(PlayerObject){
 				PlayerObject.selected_character.is_selected = false
 				PlayerObject.selected_character = party[i]
 				PlayerObject.selected_character.is_selected = true
-				oCamera.x = PlayerObject.selected_character.x
-				oCamera.y = PlayerObject.selected_character.y
+				oCamera.xTo = PlayerObject.selected_character.x
+				oCamera.yTo = PlayerObject.selected_character.y
 				audio_play_sound(soundCharSwitch, 11, false)
 			}
 		}

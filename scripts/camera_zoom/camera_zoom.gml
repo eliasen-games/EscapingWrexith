@@ -5,11 +5,13 @@ function camera_zoom(){
 		if(camWidth < camMaxWidth or camHeight < camMaxHeight){
 			camWidth = camWidth * (1+zoomScaler)
 			camHeight = camHeight * (1+zoomScaler)
+			camSpeed = camSpeed * (1+zoomScaler)
 		}
 	} else if(input.in[IN.zoomOut]){
 		if(camWidth > camMinWidth and camHeight > camMinHeight){
 			camWidth = camWidth * (1-zoomScaler)
 			camHeight = camHeight * (1-zoomScaler)
+			camSpeed = camSpeed * (1-zoomScaler)
 		}
 	}
 }

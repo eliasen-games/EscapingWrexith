@@ -11,5 +11,9 @@ enum IN{
 	spell,
 	confirm,
 	zoomIn,
-	zoomOut
+	zoomOut,
+	up,
+	left,
+	down,
+	right
 }
