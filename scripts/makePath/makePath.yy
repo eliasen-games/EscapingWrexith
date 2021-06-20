@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Entity Generation",
-    "path": "folders/Scripts/LevelGeneration/Entity Generation.yy",
+    "name": "LevelGeneration",
+    "path": "folders/Scripts/LevelGeneration.yy",
   },
   "resourceVersion": "1.0",
-  "name": "characterRelication",
+  "name": "makePath",
   "tags": [],
   "resourceType": "GMScript",
 }

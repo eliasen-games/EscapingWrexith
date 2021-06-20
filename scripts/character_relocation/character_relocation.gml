@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function characterRelication(levelDims){
+function character_relocation(levelDims){
 	//Find postition for party member
 	for(var member = 0; member < array_length(oPlayer.party)-1; member++)
 		if(oPlayer.party[member] != -4){

@@ -23,7 +23,7 @@ function generateLevel(level){
 	CraftingSpawning(levelDims)
 	//GenerateTreasure
 	//Relocate Characters
-	characterRelication(levelDims)
+	character_relocation(levelDims)
 	StrangerSpawning(levelDims, level)
 	//Make Door
 	if(level != 15){
@@ -35,6 +35,8 @@ function generateLevel(level){
 	}
 	//Increment Level
 	oLevelGenerator.level = oLevelGenerator.level + 1
+	//destroy chamber objects
+	instance_destroy(oChamber)
 	//Return Dims
 	return levelDims
 }

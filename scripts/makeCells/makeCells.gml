@@ -15,12 +15,17 @@ function makeCells(width, height, spawnFog){
 				wall.edge = true	
 			} else{
 				wall.edge = false	
+				//Create Fog
+				if(spawnFog){
+					instance_create_depth(posX, posY, depth-1, oFog)
+				}
 			}
 			array_push(cell.contains, wall)
 			//Create Fog
+			/*
 			if(spawnFog){
 				instance_create_depth(posX, posY, depth-1, oFog)
-			}
+			}*/
 		}
 	}
 }
