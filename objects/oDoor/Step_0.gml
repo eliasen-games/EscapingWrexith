@@ -19,3 +19,13 @@ if(touching and createButtons){
 	instance_destroy(oButtonDecendConfirm)
 	createButtons = true
 }
+
+if(!position_meeting(x,y,oFog)){
+	discovered = true
+}
+
+if(discovered != lastdiscovered){
+	destroy_fog(x,y,range/sprite_get_width(sCell)+2)
+}
+
+lastdiscovered = discovered

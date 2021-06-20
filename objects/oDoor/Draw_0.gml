@@ -1,6 +1,6 @@
 drawBlockText("[ ]", c_orange)
 
-if(!position_meeting(x,y,oFog)){
+if(discovered){
 	if(playerProx){
 		draw_set_color(c_lime)
 	} else{

@@ -21,11 +21,11 @@ function destroy_fog(centerX, centerY, visibility){
 			}
 		}
 	}
-	//8 "easy" directions
-	for(var i = 0; i < 8; i++){
-		for(var cells = 0; cells < visibility; cells++){
-			var checkX = cos(convert_angle(i*45, false)) * cells * cellH * 2
-			var checkY = sin(convert_angle(i*45, false)) * cells * cellH * 2
+	//4 cardinal directions
+	for(var i = 0; i < 4; i++){
+		for(var cells = 0; cells <= visibility; cells++){
+			var checkX = cos(convert_angle(i*90, false)) * cells * cellH * 2
+			var checkY = sin(convert_angle(i*90, false)) * cells * cellH * 2
 			if(position_meeting(checkX, checkY, oFog)){
 				var fogToDestroy = instance_nearest(checkX, checkY, oFog)
 				instance_destroy(fogToDestroy)
