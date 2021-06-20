@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Quality of Life Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "drawBlockText",
+  "name": "convert_angle",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -9,5 +9,5 @@ if (nearest_character != noone and nearest_character.x == x and nearest_characte
 	
 }
 else {
-	drawBlockText(".", c_dkgray)
+	drawBlockText(".", c_grey)
 }

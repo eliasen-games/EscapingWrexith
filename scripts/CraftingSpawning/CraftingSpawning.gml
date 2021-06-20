@@ -5,7 +5,7 @@ function CraftingSpawning(levelDims){
 	while(numStations > 0){
 		show_debug_message("spawning crafting")
 		var stationSpawn = craftingStations[irandom(array_length(craftingStations)-1)];
-		spawn_anywhere(levelDims, stationSpawn)
+		spawn_anywhere(levelDims, stationSpawn, depth)
 		numStations--
 	}
 }

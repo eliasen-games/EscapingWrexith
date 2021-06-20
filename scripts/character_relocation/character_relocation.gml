@@ -18,6 +18,7 @@ function character_relocation(levelDims){
 			oPlayer.party[member].base_agility = oPlayer.party[member].base_agility + 1
 			oPlayer.party[member].base_intelligence = oPlayer.party[member].base_intelligence + 1
 			oPlayer.party[member].base_strength = oPlayer.party[member].base_strength + 1
+			destroy_fog(spawnX, spawnY, oPlayer.party[member].visibility)
 		}
 	oCamera.x = oPlayer.selected_character.x
 	oCamera.y = oPlayer.selected_character.y

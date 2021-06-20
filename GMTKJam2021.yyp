@@ -65,6 +65,7 @@
     {"id":{"name":"crafting_craft_armor","path":"scripts/crafting_craft_armor/crafting_craft_armor.yy",},"order":1,},
     {"id":{"name":"delete_persistent_objects","path":"scripts/delete_persistent_objects/delete_persistent_objects.yy",},"order":8,},
     {"id":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"order":4,},
+    {"id":{"name":"destroy_fog","path":"scripts/destroy_fog/destroy_fog.yy",},"order":6,},
     {"id":{"name":"soundCharSwitch","path":"sounds/soundCharSwitch/soundCharSwitch.yy",},"order":10,},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":5,},
     {"id":{"name":"DoorSpawning","path":"scripts/DoorSpawning/DoorSpawning.yy",},"order":4,},
@@ -82,6 +83,7 @@
     {"id":{"name":"oStrangerCharacter","path":"objects/oStrangerCharacter/oStrangerCharacter.yy",},"order":0,},
     {"id":{"name":"oSpell","path":"objects/oSpell/oSpell.yy",},"order":2,},
     {"id":{"name":"oButtonMaster","path":"objects/oButtonMaster/oButtonMaster.yy",},"order":0,},
+    {"id":{"name":"convert_angle","path":"scripts/convert_angle/convert_angle.yy",},"order":1,},
     {"id":{"name":"rBaseRoom","path":"rooms/rBaseRoom/rBaseRoom.yy",},"order":19,},
     {"id":{"name":"oUIController","path":"objects/oUIController/oUIController.yy",},"order":7,},
     {"id":{"name":"oButtonAlchemyConfirm","path":"objects/oButtonAlchemyConfirm/oButtonAlchemyConfirm.yy",},"order":1,},
@@ -178,6 +180,7 @@
     {"folderPath":"folders/Objects/Entities/Friendlies.yy","order":7,"resourceVersion":"1.0","name":"Friendlies","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Buttons/Menu.yy","order":7,"resourceVersion":"1.0","name":"Menu","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Camera.yy","order":6,"resourceVersion":"1.0","name":"Camera","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/Quality of Life Scripts.yy","order":9,"resourceVersion":"1.0","name":"Quality of Life Scripts","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

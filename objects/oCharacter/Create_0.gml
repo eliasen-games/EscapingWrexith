@@ -15,6 +15,8 @@ agility = base_agility
 intelligence = base_intelligence
 strength = base_strength
 base_damage = 1
+visibility = 9
+destroy_fog(x,y,visibility)
 // combat state
 hp = strength
 damage = base_damage

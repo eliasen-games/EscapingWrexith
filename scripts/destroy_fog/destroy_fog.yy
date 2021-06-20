@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Quality of Life Scripts",
-    "path": "folders/Scripts/Quality of Life Scripts.yy",
+    "name": "Character",
+    "path": "folders/Scripts/Character.yy",
   },
   "resourceVersion": "1.0",
-  "name": "drawBlockText",
+  "name": "destroy_fog",
   "tags": [],
   "resourceType": "GMScript",
 }

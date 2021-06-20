@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function spawn_anywhere(levelDims, object){
+function spawn_anywhere(levelDims, object, depth){
 	var cellH = sprite_get_height(sCell)
 	var spawnX = irandom_range(1,levelDims[0]-2) * cellH
 	var spawnY = irandom_range(1,levelDims[1]-2) * cellH
