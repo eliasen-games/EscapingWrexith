@@ -1,4 +1,4 @@
-function select_handling(){
+function cell_select_handling(){
 	var clicked_cell = instance_nearest(oCursor.x, oCursor.y, oCell)
 	var nearest_stranger = instance_nearest(clicked_cell.x, clicked_cell.y, oStrangerCharacter)
 	var nearest_monster = instance_nearest(clicked_cell.x, clicked_cell.y, oParentMonster)

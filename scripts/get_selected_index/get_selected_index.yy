@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Player.yy",
   },
   "resourceVersion": "1.0",
-  "name": "select_handling",
+  "name": "get_selected_index",
   "tags": [],
   "resourceType": "GMScript",
 }
