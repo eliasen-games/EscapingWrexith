@@ -4,7 +4,7 @@ function destroy_fog(centerX, centerY, visibility){
 	var cellH = sprite_get_height(sCell)/2
 	
 	//General Line of Sight
-	var degreeStep = 2
+	var degreeStep = 1
 	for(var degree = 0; degree < 360; degree += degreeStep){
 		var radAngle = convert_angle(degree, false)
 		var xChange = cos(radAngle) * cellH

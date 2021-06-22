@@ -28,7 +28,7 @@ function update_fog_sprite(){
 	} else if(neighbors[0,1] != noone and neighbors[1,0] != noone){
 		image_index	= 2
 		image_angle = 270
-	} else if(neighbors[1,0] != noone and neighbors[1,2] != noone){
+	} else if(neighbors[1,0] != noone and neighbors[2,1] != noone){
 		image_index	= 2
 		image_angle = 0
 	} else if(neighbors[1,2] != noone and neighbors[2,1] != noone){
