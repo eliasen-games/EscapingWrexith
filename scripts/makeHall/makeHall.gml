@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function makeHall(startX, startY, dir, levelDims, numChambers){
-	show_debug_message("making hallway")
+	//show_debug_message("making hallway")
 	var cellH = sprite_get_height(sCell)
 	var currX = startX
 	var currY = startY
@@ -44,7 +44,7 @@ function makeHall(startX, startY, dir, levelDims, numChambers){
 	//show_debug_message(numChambers)
 	//show_debug_message(recurse)
 	if(recurse and irandom(4) != 1){
-		show_debug_message("recursing")
+		//show_debug_message("recursing")
 		var splits = getHallSplits(1,14)
 		for(var i = 0; i < 2; i++){
 			if(splits[i] != -4){

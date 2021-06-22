@@ -15,6 +15,11 @@ function generateLevel(level){
 	var colAmount = 32
 	makeCells(rowAmount,colAmount, true)
 	levelDims = [colAmount, rowAmount]
+	//Update Fog Sprites
+	with oFog{
+		//neighbors = get_fog_neighbors()
+		//update_fog_sprite()	
+	}
 	//Generate Rooms
 	generateChambers(level, [colAmount, rowAmount])
 	//Generate Monsters
