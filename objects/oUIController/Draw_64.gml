@@ -1,3 +1,4 @@
+draw_set_font(fDef)
 //Width
 var width = window_get_width()/6
 var height = window_get_height()

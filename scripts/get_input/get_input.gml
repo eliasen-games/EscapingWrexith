@@ -28,6 +28,8 @@ function get_input(inputs){
 	inputs[13] = keyboard_check(ord("A"))
 	inputs[14] = keyboard_check(ord("S"))
 	inputs[15] = keyboard_check(ord("D"))
+	//Crafting Inputs
+	inputs[16] = mouse_check_button(mb_left)
 	
 	return inputs
 }

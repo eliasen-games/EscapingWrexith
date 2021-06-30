@@ -1,13 +1,13 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function cast_spell(){
+function cast_spell(radius){
 	currSpellCD = magic_slot.spellCD
 	var charX = x
 	var charY = y
 	var dmg = magic_slot.spellDamage
 	var reset_targets = ds_list_create()
 	with(oParentMonster){
-		if(point_distance(x,y, charX, charY) < 46){
+		if(point_distance(x,y, charX, charY) < radius){
 			hp -= dmg
 			if (hp <= 0) {
 				ds_list_add(reset_targets, id)

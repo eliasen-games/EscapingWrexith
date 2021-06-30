@@ -12,7 +12,7 @@ if (weapon_slot != noone) {
 if(magic_slot != noone){
 	if(input.in[IN.spell] and currSpellCD == 0 and oPlayer.selected_character == id){
 		//Cast Spell
-		cast_spell()
+		cast_spell(currMaxSpellRad)
 	}
 }
 if (hp > strength) {

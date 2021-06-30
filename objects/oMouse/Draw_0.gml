@@ -1,0 +1,5 @@
+draw_set_color(c_black)
+draw_set_alpha(.25)
+draw_rectangle(x-width/2, y-height/2, x+width/2, y+height/2, false)
+draw_set_alpha(1)
+drawBlockText(text, c_yellow)

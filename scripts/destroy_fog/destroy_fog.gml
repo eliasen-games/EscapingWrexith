@@ -4,7 +4,7 @@ function destroy_fog(centerX, centerY, visibility){
 	var cellH = sprite_get_height(sCell)/2
 	
 	//General Line of Sight
-	var degreeStep = 1
+	var degreeStep = 5
 	for(var degree = 0; degree < 360; degree += degreeStep){
 		var radAngle = convert_angle(degree, false)
 		var xChange = cos(radAngle) * cellH
@@ -15,17 +15,17 @@ function destroy_fog(centerX, centerY, visibility){
 				var fogToDestroy = instance_nearest(centerX + xChange * cellsChecked, centerY + yChange * cellsChecked, oFog)	
 				instance_destroy(fogToDestroy)
 			}
-			cellsChecked++
 			if(position_meeting(centerX + xChange * cellsChecked, centerY + yChange * cellsChecked, oWall) or cellsChecked >= visibility*2){
 				break	
 			}
+			cellsChecked++
 		}
 	}
 	//4 cardinal directions
 	for(var i = 0; i < 4; i++){
 		for(var cells = 0; cells <= visibility; cells++){
-			var checkX = cos(convert_angle(i*90, false)) * cells * cellH * 2
-			var checkY = sin(convert_angle(i*90, false)) * cells * cellH * 2
+			var checkX = centerX + cos(convert_angle(i*90, false)) * cells * cellH * 2
+			var checkY = centerY + sin(convert_angle(i*90, false)) * cells * cellH * 2
 			if(position_meeting(checkX, checkY, oFog)){
 				var fogToDestroy = instance_nearest(checkX, checkY, oFog)
 				instance_destroy(fogToDestroy)

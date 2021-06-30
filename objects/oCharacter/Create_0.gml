@@ -29,9 +29,11 @@ armor_slot = noone
 buff_slot = noone
 consumable_slot = instance_create_layer(x, y, layer_get_id("Characters"), oConsumable)
 consumable_slot.hp_restore = 1
+//Spell Vars
 currSpellCD = 0
-spellExpandRate = 4
+spellExpandRate = sprite_get_height(sCell)/12
 currSpellRadius = 0
+currMaxSpellRad = sprite_get_height(sCell) * 1.5
 drawSpell = false
 // control state
 character_id = 0

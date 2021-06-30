@@ -8,4 +8,4 @@ if (touching and createButtons) {
 } else if(!touching and !createButtons){
 	instance_destroy(confirm_button_type)
 	createButtons = true
-}
+} 
