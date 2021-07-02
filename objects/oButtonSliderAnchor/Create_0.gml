@@ -1,3 +1,4 @@
+draw_set_font(fButtons)
 slide_bounds = "________________"
 width = string_width(slide_bounds)
 height = string_height(slide_bounds)

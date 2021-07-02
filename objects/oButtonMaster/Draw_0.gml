@@ -1,3 +1,4 @@
+draw_set_font(fButtons)
 draw_set_color(c_white)
 draw_set_alpha(.9)
 draw_rectangle(x-width/2,

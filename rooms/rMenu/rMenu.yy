@@ -32,14 +32,14 @@
   "sequenceId": null,
   "roomSettings": {
     "inheritRoomSettings": false,
-    "Width": 1366,
-    "Height": 768,
+    "Width": 5464,
+    "Height": 3072,
     "persistent": false,
   },
   "viewSettings": {
     "inheritViewSettings": false,
-    "enableViews": true,
-    "clearViewBackground": true,
+    "enableViews": false,
+    "clearViewBackground": false,
     "clearDisplayBuffer": true,
   },
   "physicsSettings": {

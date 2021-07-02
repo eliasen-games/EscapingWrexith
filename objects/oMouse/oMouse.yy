@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sCursorBig",
+    "path": "sprites/sCursorBig/sCursorBig.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
