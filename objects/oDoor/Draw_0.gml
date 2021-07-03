@@ -1,5 +1,5 @@
 draw_set_font(fEntity)
-drawBlockText("[ ]", c_orange)
+drawBlockText("[]", c_orange)
 
 if(discovered){
 	if(playerProx){

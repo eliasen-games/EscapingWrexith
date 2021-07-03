@@ -38,10 +38,13 @@ function generateLevel(level){
 	if(level == 15){
 		SpawnBoss()
 	}
+	//Fill Dead-Ends
+	find_deadends(levelDims)
+	fill_deadends()
 	//Increment Level
 	oLevelGenerator.level = oLevelGenerator.level + 1
 	//destroy chamber objects
-	//instance_destroy(oChamber)
+	instance_destroy(oChamber)
 	//Return Dims
 	return levelDims
 }

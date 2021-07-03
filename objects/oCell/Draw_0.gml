@@ -1,3 +1,4 @@
+/*
 var nearest_character = instance_nearest(x, y, oCharacter)
 var nearest_wall = instance_nearest(x, y, oWall)
 var nearest_monster = instance_nearest(x, y, oParentMonster)
@@ -9,5 +10,13 @@ if (nearest_character != noone and nearest_character.x == x and nearest_characte
 	
 }
 else {
+	drawBlockText(".", c_grey)
+}
+*/
+if(position_meeting(x,y,oCellOccupier)){
+	
+} else if(position_meeting(x,y,oCraftingParent) or position_meeting(x,y,oDoor)){
+	
+} else {
 	drawBlockText(".", c_grey)
 }

@@ -1,1 +1,1 @@
-drawBlockText("H", c_fuchsia)
+drawBlockText("H", c_teal)

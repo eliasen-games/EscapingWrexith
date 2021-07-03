@@ -22,5 +22,5 @@ function makePath(xStart, yStart, xEnd, yEnd, cellH){
 		instance_create_depth(xStart + countX*cellH*sign(xEnd-xStart), yStart + countY*cellH*sign(yEnd-yStart), depth, oHall)
 	}
 	wipeWalls()
-	//instance_destroy(oHall)
+	instance_destroy(oHall)
 }

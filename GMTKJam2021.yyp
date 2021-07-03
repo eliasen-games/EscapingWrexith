@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"StrangerSpawning","path":"scripts/StrangerSpawning/StrangerSpawning.yy",},"order":3,},
+    {"id":{"name":"find_deadends","path":"scripts/find_deadends/find_deadends.yy",},"order":8,},
     {"id":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},"order":1,},
     {"id":{"name":"MonsterSpawning","path":"scripts/MonsterSpawning/MonsterSpawning.yy",},"order":0,},
     {"id":{"name":"rebuild_matricies","path":"scripts/rebuild_matricies/rebuild_matricies.yy",},"order":1,},
@@ -14,6 +15,7 @@
     {"id":{"name":"crafting_craft_consumable","path":"scripts/crafting_craft_consumable/crafting_craft_consumable.yy",},"order":0,},
     {"id":{"name":"cast_spell","path":"scripts/cast_spell/cast_spell.yy",},"order":5,},
     {"id":{"name":"oGhost","path":"objects/oGhost/oGhost.yy",},"order":5,},
+    {"id":{"name":"oDeadEnd","path":"objects/oDeadEnd/oDeadEnd.yy",},"order":8,},
     {"id":{"name":"oTarget","path":"objects/oTarget/oTarget.yy",},"order":4,},
     {"id":{"name":"find_path","path":"scripts/find_path/find_path.yy",},"order":1,},
     {"id":{"name":"makeHallSplits","path":"scripts/makeHallSplits/makeHallSplits.yy",},"order":5,},
@@ -107,6 +109,7 @@
     {"id":{"name":"draw_tutorial_text","path":"scripts/draw_tutorial_text/draw_tutorial_text.yy",},"order":2,},
     {"id":{"name":"sCursorBig","path":"sprites/sCursorBig/sCursorBig.yy",},"order":10,},
     {"id":{"name":"getHallSplits","path":"scripts/getHallSplits/getHallSplits.yy",},"order":4,},
+    {"id":{"name":"fill_deadends","path":"scripts/fill_deadends/fill_deadends.yy",},"order":9,},
     {"id":{"name":"oHall","path":"objects/oHall/oHall.yy",},"order":2,},
     {"id":{"name":"CraftingSpawning","path":"scripts/CraftingSpawning/CraftingSpawning.yy",},"order":1,},
     {"id":{"name":"oSkeleton","path":"objects/oSkeleton/oSkeleton.yy",},"order":4,},
