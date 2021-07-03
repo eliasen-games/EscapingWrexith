@@ -13,7 +13,7 @@ for(var i = 0; i < array_length(party); i++){
 }
 var touching = instance_exists(nearChar) and (x-nearChar.x==0) and (y-nearChar.y==0)
 if(touching and createButtons){
-	instance_create_depth(x, y-24, depth, oButtonDecendConfirm)
+	instance_create_depth(x, y-sprite_get_height(sCell)/1.5, depth, oButtonDecendConfirm)
 	createButtons = false
 } else if(!touching and !createButtons){
 	instance_destroy(oButtonDecendConfirm)

@@ -2,7 +2,7 @@ switch_characters(id)
 
 var notOnFog = !position_meeting(oCursor.x, oCursor.y, oFog)
 var notOnButton = !position_meeting(oCursor.x, oCursor.y, oButtonMaster)
-if (input.in[IN.select] and notOnFog and notOnButton) {
+if (input.in[IN.select] and notOnFog and notOnButton and clickable) {
 	cell_select_handling()
 }
 

@@ -17,4 +17,5 @@ oCamera.x = selected_character.x
 oCamera.y = selected_character.y
 
 //create input object
+clickable = true
 //instance_create_depth(x,y,depth,input)
