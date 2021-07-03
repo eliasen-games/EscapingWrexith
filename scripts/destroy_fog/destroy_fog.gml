@@ -11,9 +11,9 @@ function destroy_fog(centerX, centerY, visibility){
 		var yChange = sin(radAngle) * cellH
 		var cellsChecked = 1
 		while(true){
-			if(position_meeting(centerX + xChange * cellsChecked, centerY + yChange * cellsChecked, oFog)){
-				var fogToDestroy = instance_nearest(centerX + xChange * cellsChecked, centerY + yChange * cellsChecked, oFog)	
-				instance_destroy(fogToDestroy)
+			if(position_meeting(centerX + xChange * cellsChecked, centerY + yChange * cellsChecked, oCell)){
+				var foggyCell = instance_nearest(centerX + xChange * cellsChecked, centerY + yChange * cellsChecked, oCell)
+				foggyCell.fog = false
 			}
 			if(position_meeting(centerX + xChange * cellsChecked, centerY + yChange * cellsChecked, oWall) or cellsChecked >= visibility*2){
 				break	
@@ -26,9 +26,9 @@ function destroy_fog(centerX, centerY, visibility){
 		for(var cells = 0; cells <= visibility; cells++){
 			var checkX = centerX + cos(convert_angle(i*90, false)) * cells * cellH * 2
 			var checkY = centerY + sin(convert_angle(i*90, false)) * cells * cellH * 2
-			if(position_meeting(checkX, checkY, oFog)){
-				var fogToDestroy = instance_nearest(checkX, checkY, oFog)
-				instance_destroy(fogToDestroy)
+			if(position_meeting(checkX, checkY, oCell)){
+				var foggyCell = instance_nearest(checkX, checkY, oCell)
+				foggyCell.fog = false
 			}
 			if(position_meeting(checkX, checkY, oWall)){
 				break;	

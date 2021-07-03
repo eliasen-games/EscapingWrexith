@@ -20,7 +20,7 @@ if(touching and createButtons){
 	createButtons = true
 }
 
-if(!position_meeting(x,y,oFog)){
+if(instance_nearest(x,y,oCell).fog == false){
 	discovered = true
 }
 

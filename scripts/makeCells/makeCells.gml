@@ -25,7 +25,8 @@ function makeCells(width, height, spawnFog){
 				wall.edge = false	
 				//Create Fog
 				if(spawnFog){
-					instance_create_depth(posX, posY, depth-1, oFog)
+					cell.fog = true
+					//instance_create_depth(posX, posY, depth-1, oFog)
 				}
 			}
 			array_push(cell.contains, wall)
