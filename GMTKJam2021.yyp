@@ -140,6 +140,7 @@
     {"id":{"name":"oButtonTutorialCancel","path":"objects/oButtonTutorialCancel/oButtonTutorialCancel.yy",},"order":4,},
     {"id":{"name":"drawSlots","path":"scripts/drawSlots/drawSlots.yy",},"order":2,},
     {"id":{"name":"sCellTargeted","path":"sprites/sCellTargeted/sCellTargeted.yy",},"order":3,},
+    {"id":{"name":"calculate_buffs","path":"scripts/calculate_buffs/calculate_buffs.yy",},"order":7,},
     {"id":{"name":"makeHall","path":"scripts/makeHall/makeHall.yy",},"order":2,},
     {"id":{"name":"oButtonAltarConfirm","path":"objects/oButtonAltarConfirm/oButtonAltarConfirm.yy",},"order":2,},
     {"id":{"name":"rInitialize","path":"rooms/rInitialize/rInitialize.yy",},"order":1,},

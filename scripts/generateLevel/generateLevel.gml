@@ -11,8 +11,8 @@ function generateLevel(level){
 	//Make Cells
 	//var rowAmount = irandom_range(levelDims[0], levelDims[1])
 	//var colAmount = irandom_range(levelDims[2], levelDims[3])
-	var rowAmount = 32
-	var colAmount = 32
+	var rowAmount = 64
+	var colAmount = 64
 	makeCells(rowAmount,colAmount, true)
 	levelDims = [colAmount, rowAmount]
 	//Update Fog Sprites
