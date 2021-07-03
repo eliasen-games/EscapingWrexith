@@ -3,9 +3,9 @@ draw_set_font(fButtons)
 draw_set_color(c_dkgray)
 draw_set_alpha(.8)
 draw_rectangle(x - width/2 * 1.25, 
-			   y - height * 1.25-height/2, 
+			   y - height * 1.25 - height/2, 
 			   x + width/2 * 1.25, 
-			   y + height * 1.2-height/2, 
+			   y + height * 1.25 + height/2 * 1.25, 
 			   false)
 draw_set_alpha(1)
 draw_set_color(c_black)

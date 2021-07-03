@@ -19,8 +19,8 @@ function makePath(xStart, yStart, xEnd, yEnd, cellH){
 		} else{
 			countY++
 		}
-		instance_create_depth(xStart + countX*cellH*sign(xStart-xEnd), yEnd + countY*cellH*sign(yStart-yEnd), depth, oHall)
+		instance_create_depth(xStart + countX*cellH*sign(xEnd-xStart), yStart + countY*cellH*sign(yEnd-yStart), depth, oHall)
 	}
 	wipeWalls()
-	instance_destroy(oHall)
+	//instance_destroy(oHall)
 }

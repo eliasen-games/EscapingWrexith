@@ -25,7 +25,7 @@ function generateLevel(level){
 	//Generate Monsters
 	MonsterSpawning(levelDims)
 	//GenerateCrafting
-	CraftingSpawning(levelDims)
+	CraftingSpawning(levelDims, level)
 	//GenerateTreasure
 	//Relocate Characters
 	character_relocation(levelDims)
@@ -41,7 +41,7 @@ function generateLevel(level){
 	//Increment Level
 	oLevelGenerator.level = oLevelGenerator.level + 1
 	//destroy chamber objects
-	instance_destroy(oChamber)
+	//instance_destroy(oChamber)
 	//Return Dims
 	return levelDims
 }
