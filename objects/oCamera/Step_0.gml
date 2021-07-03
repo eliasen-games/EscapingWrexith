@@ -1,3 +1,11 @@
+if(resetPosition){
+	xTo = oPlayer.selected_character.x
+	yTo = oPlayer.selected_character.y
+	x = oPlayer.selected_character.x
+	y = oPlayer.selected_character.y
+	resetPosition = false
+}
+
 //CameraZoom
 camera_zoom()
 

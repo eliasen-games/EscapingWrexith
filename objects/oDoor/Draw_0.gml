@@ -1,5 +1,9 @@
 draw_set_font(fEntity)
-drawBlockText("[]", c_orange)
+if(touching){
+	drawBlockText("[ ]", c_orange)
+} else{
+	drawBlockText("[]", c_orange)
+}
 
 if(discovered){
 	if(playerProx){

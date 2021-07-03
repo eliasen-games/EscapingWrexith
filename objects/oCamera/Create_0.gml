@@ -21,8 +21,9 @@ camera_set_proj_mat(camera, pm)
 
 view_camera[0] = camera
 
-xTo = x
-yTo = y
+resetPosition = true
+xTo = 0
+yTo = 0
 
 instance_create_depth(x,y,700,oBG)
 instance_create_depth(x,y,depth, oUIController)
