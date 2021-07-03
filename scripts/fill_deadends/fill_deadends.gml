@@ -7,7 +7,7 @@ function fill_deadends(){
 			var endX = currDeadEnd.x
 			var endY = currDeadEnd.y
 			var instance_num = irandom(200)
-			if(instance_num > 185){
+			if(instance_num > 188){
 				var stationSpawn = craftingStations[irandom(array_length(craftingStations)-1)]
 				instance_create_depth(endX, endY, depth, stationSpawn)
 			} else if(instance_num > 30){
