@@ -1,6 +1,6 @@
 switch_characters(id)
 
-var notOnFog = !position_meeting(oCursor.x, oCursor.y, oFog)
+var notOnFog = !instance_nearest(oCursor.x, oCursor.y, oCell).fog
 var notOnButton = !position_meeting(oCursor.x, oCursor.y, oButtonMaster)
 if (input.in[IN.select] and notOnFog and notOnButton and clickable) {
 	cell_select_handling()
