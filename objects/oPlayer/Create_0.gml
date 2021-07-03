@@ -15,6 +15,8 @@ selected_character = party[0]
 selected_character.is_selected = true
 oCamera.x = selected_character.x
 oCamera.y = selected_character.y
+oCamera.xTo = selected_character.x
+oCamera.yTo = selected_character.y
 
 //create input object
 clickable = true

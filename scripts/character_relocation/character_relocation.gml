@@ -2,9 +2,9 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function character_relocation(levelDims){
 	//Find postition for party member
+	var cellH = sprite_get_height(sCell)
 	for(var member = 0; member < array_length(oPlayer.party)-1; member++)
 		if(oPlayer.party[member] != -4){
-			var cellH = sprite_get_height(sCell)
 			var spawnX = cellH
 			var spawnY = cellH
 			while(position_meeting(spawnX, spawnY, oCellOccupier)){
@@ -19,6 +19,7 @@ function character_relocation(levelDims){
 			oPlayer.party[member].base_intelligence = oPlayer.party[member].base_intelligence + 1
 			oPlayer.party[member].base_strength = oPlayer.party[member].base_strength + 1
 			destroy_fog(spawnX, spawnY, oPlayer.party[member].visibility)
+			protect_character(spawnX, spawnY, cellH * 2)
 		}
 	oCamera.x = oPlayer.selected_character.x
 	oCamera.y = oPlayer.selected_character.y

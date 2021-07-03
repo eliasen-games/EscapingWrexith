@@ -1,7 +1,7 @@
 draw_set_font(fDef)
 //Width
-var width = window_get_width()/6
-var height = window_get_height()
+var width = display_get_gui_width()/7
+var height = display_get_gui_height()
 
 // Draw BG
 draw_set_alpha(.5)

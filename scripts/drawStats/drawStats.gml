@@ -15,7 +15,7 @@ function drawStats(member, i, startX, startY, barWidth){
 	draw_rectangle(startX-4, startY-string_height(name)*1.25 - 4, startX + barWidth+4, startY-5, true)
 	draw_set_color(c_white)
 	draw_set_halign(fa_left)
-	draw_set_valign(fa_middle)
+	draw_set_valign(fa_bottom)
 	draw_text(startX, startY-16, name)
 	var str = string(round(member.base_strength))
 	var agl = string(round(member.base_agility))
