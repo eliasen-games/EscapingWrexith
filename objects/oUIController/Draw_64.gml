@@ -37,9 +37,10 @@ if(!oPlayer.paused){
 	// Draw current essence
 	drawEssence(width, height)
 } else{
-	draw_set_color(c_aqua)
-	draw_set_alpha(.25)
-	draw_rectangle(0,0,width * 7,height,false)	
+	draw_set_color(c_maroon)
+	draw_rectangle(0,0,width,height,false)	
+	draw_set_color(c_black)
+	draw_set_font(fMenu)
+	draw_text(width/2, height*.1, "PAUSED")
 	draw_set_color(c_white)
-	draw_set_alpha(1)
 }

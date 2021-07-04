@@ -1,5 +1,5 @@
 if(input.in[IN.pause]){
-	paused = !paused	
+	pause_game()
 }
 
 if(!paused){
