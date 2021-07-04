@@ -16,4 +16,5 @@ selected_character.is_selected = true
 
 //create input object
 clickable = true
+paused = false
 //instance_create_depth(x,y,depth,input)

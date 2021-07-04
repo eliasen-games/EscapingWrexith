@@ -30,6 +30,8 @@ function get_input(inputs){
 	inputs[15] = keyboard_check(ord("D"))
 	//Crafting Inputs
 	inputs[16] = mouse_check_button(mb_left)
+	//Pause
+	inputs[17] = keyboard_check_released(vk_escape)
 	
 	return inputs
 }

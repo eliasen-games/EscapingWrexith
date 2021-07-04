@@ -16,5 +16,6 @@ enum IN{
 	left,
 	down,
 	right,
-	select_hold
+	select_hold,
+	pause
 }
