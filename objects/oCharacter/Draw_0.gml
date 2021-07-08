@@ -6,12 +6,7 @@ if (is_selected) {
 	draw_circle_color(x,y,sprite_get_height(sCell)/2-2, c_lime, c_lime, true)
 }
 else {
-	draw_set_alpha(.333)
-	drawBlockText(string(character_id), c_green)
-	draw_circle_color(x,y,sprite_get_height(sCell)/2, c_lime, c_green, true)
-	draw_circle_color(x,y,sprite_get_height(sCell)/2-1, c_lime, c_green, true)
-	draw_circle_color(x,y,sprite_get_height(sCell)/2-2, c_lime, c_green, true)
-	draw_set_alpha(1)
+	drawBlockText(string(character_id), c_lime)
 }
 
 if(drawSpell){

@@ -72,6 +72,7 @@
     {"id":{"name":"character_relocation","path":"scripts/character_relocation/character_relocation.yy",},"order":2,},
     {"id":{"name":"getLevelDims","path":"scripts/getLevelDims/getLevelDims.yy",},"order":2,},
     {"id":{"name":"crafting_craft_armor","path":"scripts/crafting_craft_armor/crafting_craft_armor.yy",},"order":1,},
+    {"id":{"name":"oEssenceJar","path":"objects/oEssenceJar/oEssenceJar.yy",},"order":9,},
     {"id":{"name":"delete_persistent_objects","path":"scripts/delete_persistent_objects/delete_persistent_objects.yy",},"order":3,},
     {"id":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"order":4,},
     {"id":{"name":"oButtonSlider","path":"objects/oButtonSlider/oButtonSlider.yy",},"order":0,},

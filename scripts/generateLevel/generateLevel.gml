@@ -21,7 +21,9 @@ function generateLevel(level){
 	MonsterSpawning(levelDims)
 	//GenerateCrafting
 	CraftingSpawning(levelDims, level)
-	//GenerateTreasure
+	//Fill Dead-Ends
+	find_deadends(levelDims)
+	fill_deadends()	
 	//Relocate Characters
 	character_relocation(levelDims)
 	StrangerSpawning(levelDims, level)
@@ -33,9 +35,6 @@ function generateLevel(level){
 	if(level == 15){
 		SpawnBoss()
 	}
-	//Fill Dead-Ends
-	find_deadends(levelDims)
-	fill_deadends()
 	//Increment Level
 	oLevelGenerator.level = oLevelGenerator.level + 1
 	//destroy chamber objects

@@ -6,6 +6,8 @@ if(fog){
 	
 } else if(position_meeting(x,y,oCraftingParent) or position_meeting(x,y,oDoor)){
 	
+} else if(position_meeting(x,y,oEssenceJar)){
+	
 } else {
-	drawBlockText(".", c_grey)
+	drawBlockText(".", c_dkgrey)
 }

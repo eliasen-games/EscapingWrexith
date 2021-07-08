@@ -10,6 +10,8 @@ function fill_deadends(){
 			if(instance_num > 188){
 				var stationSpawn = craftingStations[irandom(array_length(craftingStations)-1)]
 				instance_create_depth(endX, endY, depth, stationSpawn)
+			} else if(instance_num > 150 ){
+				instance_create_depth(endX, endY, depth, oEssenceJar)
 			} else if(instance_num > 30){
 				var monsterSpawn = monsters[irandom(array_length(monsters)-1)]	
 				instance_create_depth(endX, endY, depth, monsterSpawn)
