@@ -23,6 +23,14 @@ if(input.in[IN.right]){
 	xTo += camSpeed	
 }
 
+//Camera Shake
+shake_camera(shakeFrames, maxShakeFrames, shakeFrequency, shakeIntensity, shakeDirection)
+if(shakeFrames >= 0){
+	shakeFrames--	
+} else{
+	set_camera_shake(0,1,1,0,0)	
+}
+
 //Reposition Camera
 x += (xTo-x)/5
 y += (yTo-y)/5

@@ -1,5 +1,6 @@
 if(input.in[IN.pause]){
 	pause_game()
+	set_camera_shake(10, 10, 2, sprite_get_width(sCell)/6, 0)
 }
 
 if(!paused){

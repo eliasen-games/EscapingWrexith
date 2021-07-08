@@ -4,8 +4,8 @@ follow = followDefault
 zoomScaler = .1
 camWidth = 1920
 camHeight = 1080
-camMaxWidth = sprite_get_height(sCell) * 45
-camMaxHeight = sprite_get_height(sCell) * 22.5
+camMaxWidth = sprite_get_height(sCell) * 100
+camMaxHeight = sprite_get_height(sCell) * 50
 camMinWidth = sprite_get_height(sCell) * 16
 camMinHeight = sprite_get_height(sCell) * 9
 camSpeed = 8
@@ -24,6 +24,9 @@ view_camera[0] = camera
 resetPosition = true
 xTo = 0
 yTo = 0
+
+//Shake Vars
+set_camera_shake(0,1,1,0,1)
 
 instance_create_depth(x,y,700,oBG)
 instance_create_depth(x,y,depth, oUIController)

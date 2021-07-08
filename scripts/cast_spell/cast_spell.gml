@@ -30,5 +30,6 @@ function cast_spell(radius){
 		}
 	}
 	drawSpell = true
+	set_camera_shake(dmg*10, dmg*10, 2, dmg*sprite_get_width(sCell)/6, 1)
 	audio_play_sound(soundExplosion, 12, false)
 }

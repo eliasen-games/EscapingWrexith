@@ -18,6 +18,8 @@ function character_relocation(levelDims){
 			oPlayer.party[member].base_agility = oPlayer.party[member].base_agility + 1
 			oPlayer.party[member].base_intelligence = oPlayer.party[member].base_intelligence + 1
 			oPlayer.party[member].base_strength = oPlayer.party[member].base_strength + 1
+			var chamber = instance_nearest(spawnX, spawnY, oChamber)
+			makePath(spawnX, spawnY, chamber.x, chamber.y, cellH)
 			destroy_fog(spawnX, spawnY, oPlayer.party[member].visibility)
 			protect_character(spawnX, spawnY, cellH * 2)
 		}

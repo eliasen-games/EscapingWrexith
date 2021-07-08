@@ -14,19 +14,12 @@ function makeCells(width, height, spawnFog){
 			if((col == 0 or row == 0) or (row == height-1 or col == width-1)){
 				//On Edge
 				wall.edge = true	
-				/*
-				//Create Fog
-				if(spawnFog){
-					instance_create_depth(posX, posY, depth-1, oFog)
-				}
-				*/
 			} else{
 				//In Center
 				wall.edge = false	
 				//Create Fog
 				if(spawnFog){
-					cell.fog = true
-					//instance_create_depth(posX, posY, depth-1, oFog)
+					//cell.fog = true
 				}
 			}
 			array_push(cell.contains, wall)
