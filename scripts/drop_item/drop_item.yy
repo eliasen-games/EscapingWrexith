@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Moving",
-    "path": "folders/Scripts/Character/Moving.yy",
+    "name": "Items",
+    "path": "folders/Scripts/Character/Items.yy",
   },
   "resourceVersion": "1.0",
-  "name": "find_path",
+  "name": "drop_item",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -37,8 +37,8 @@ function generateLevel(level){
 	}
 	//Increment Level
 	oLevelGenerator.level = oLevelGenerator.level + 1
-	//destroy chamber objects
-	instance_destroy(oChamber)
+	//Clean Level
+	clean_level()
 	//Return Dims
 	return levelDims
 }

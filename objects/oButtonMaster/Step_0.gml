@@ -4,6 +4,6 @@ if(abs(mouse_x - x) < width/2 and abs(mouse_y-y) < height/2){
 	selected = false	
 }
 
-if(selected and mouse_check_button_released(mb_left)){
+if(selected and input.in[IN.select]){
 	doAction = true
 }

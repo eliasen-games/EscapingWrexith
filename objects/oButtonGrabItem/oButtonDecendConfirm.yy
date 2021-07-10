@@ -1,15 +1,12 @@
 {
-  "spriteId": {
-    "name": "sCellEmpty",
-    "path": "sprites/sCellEmpty/sCellEmpty.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
-  "persistent": true,
+  "persistent": false,
   "parentObjectId": {
-    "name": "oCraftable",
-    "path": "objects/oCraftable/oCraftable.yy",
+    "name": "oButtonMaster",
+    "path": "objects/oButtonMaster/oButtonMaster.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -25,15 +22,16 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Craftables",
-    "path": "folders/Objects/Craftables.yy",
+    "name": "Buttons",
+    "path": "folders/Objects/Buttons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oArmor",
+  "name": "oButtonDecendConfirm",
   "tags": [],
   "resourceType": "GMObject",
 }

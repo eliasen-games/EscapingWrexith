@@ -6,6 +6,7 @@ if(!oPlayer.paused){
 	//Character Death
 	if (hp <= 0) {
 		oPlayer.party[character_id - 1] = noone
+		drop_all_items(x,y)
 		instance_destroy(move_target)
 		instance_destroy(id)
 	}

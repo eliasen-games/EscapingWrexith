@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Moving",
-    "path": "folders/Scripts/Character/Moving.yy",
+    "name": "Quality of Life Scripts",
+    "path": "folders/Scripts/Quality of Life Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "find_path",
+  "name": "is_cell_empty",
   "tags": [],
   "resourceType": "GMScript",
 }

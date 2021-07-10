@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Moving",
-    "path": "folders/Scripts/Character/Moving.yy",
+    "name": "LevelGeneration",
+    "path": "folders/Scripts/LevelGeneration.yy",
   },
   "resourceVersion": "1.0",
-  "name": "find_path",
+  "name": "delete_blocked_cells",
   "tags": [],
   "resourceType": "GMScript",
 }

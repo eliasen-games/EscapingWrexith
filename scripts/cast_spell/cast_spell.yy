@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Character",
-    "path": "folders/Scripts/Character.yy",
+    "name": "Combat",
+    "path": "folders/Scripts/Character/Combat.yy",
   },
   "resourceVersion": "1.0",
   "name": "cast_spell",
