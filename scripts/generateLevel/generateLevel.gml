@@ -23,7 +23,7 @@ function generateLevel(level){
 	CraftingSpawning(levelDims, level)
 	//Fill Dead-Ends
 	find_deadends(levelDims)
-	fill_deadends()	
+	fill_deadends()
 	//Relocate Characters
 	character_relocation(levelDims)
 	StrangerSpawning(levelDims, level)

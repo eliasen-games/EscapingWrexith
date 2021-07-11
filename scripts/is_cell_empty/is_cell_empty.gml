@@ -7,6 +7,8 @@ function is_cell_empty(checkX, checkY){
 		return false
 	} else if(position_meeting(checkX, checkY, oCraftingParent)){
 		return false
+	} else if(position_meeting(checkX, checkY, oEssenceJar)){
+		return false
 	}
 	
 	return true
