@@ -17,4 +17,5 @@ function crafting_craft_buff(crafter, character, xp){
 	buff.intelligence_bonus = intelligence_bonus
 	buff.strength_bonus = strength_bonus
 	character.buff_slot = buff
+	calculate_buffs(character)
 }

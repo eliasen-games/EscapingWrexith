@@ -6,4 +6,5 @@ function crafting_craft_spell(crafter, character, xp){
 	spell.spellDamage = ceil(xp / 50)
 	spell.spellCD = round(max(3*room_speed, floor(xp/100 * room_speed))/(character.intelligence/5))
 	character.magic_slot = spell
+	calculate_buffs(character)
 }
