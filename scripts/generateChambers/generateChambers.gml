@@ -7,7 +7,7 @@ function generateChambers(level, levelDims){
 	while(instance_number(oWall) > startingWalls * .70){
 		makeChamber(levelDims, numChambers)
 	}
-	show_debug_message("MAKING HALLS COMPLETE")
+	//show_debug_message("MAKING HALLS COMPLETE")
 	instance_destroy(oHall)
 	for(var i = 0; i < instance_number(oChamber); i++){
 		var connections = irandom_range(2, instance_number(oChamber)/2)

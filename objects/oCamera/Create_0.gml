@@ -4,10 +4,11 @@ follow = followDefault
 zoomScaler = .1
 camWidth = 1920
 camHeight = 1080
-camMaxWidth = 1920
-camMaxHeight = 1080
+camMaxWidth = sprite_get_height(sCell) * 100
+camMaxHeight = sprite_get_height(sCell) * 50
 camMinWidth = sprite_get_height(sCell) * 16
 camMinHeight = sprite_get_height(sCell) * 9
+camSpeed = 8
 
 camera = camera_create()
 var vm  = matrix_build_lookat(x,y,-100, 
@@ -20,8 +21,12 @@ camera_set_proj_mat(camera, pm)
 
 view_camera[0] = camera
 
-xTo = x
-yTo = y
+resetPosition = true
+xTo = 0
+yTo = 0
+
+//Shake Vars
+set_camera_shake(0,1,1,0,1)
 
 instance_create_depth(x,y,700,oBG)
 instance_create_depth(x,y,depth, oUIController)

@@ -15,6 +15,8 @@ agility = base_agility
 intelligence = base_intelligence
 strength = base_strength
 base_damage = 1
+visibility = 9
+destroy_fog(x,y,visibility)
 // combat state
 hp = strength
 damage = base_damage
@@ -27,15 +29,20 @@ armor_slot = noone
 buff_slot = noone
 consumable_slot = instance_create_layer(x, y, layer_get_id("Characters"), oConsumable)
 consumable_slot.hp_restore = 1
+
+//Spell Vars
 currSpellCD = 0
-spellExpandRate = 4
+spellExpandRate = sprite_get_height(sCell)/9
 currSpellRadius = 0
+currMaxSpellRad = sprite_get_height(sCell) * 1.5
 drawSpell = false
+
 // control state
 character_id = 0
 is_selected = false
 attack_target = noone
 recruit_target = noone
+
 // movement state
 move_target_cell = noone
 move_target = noone

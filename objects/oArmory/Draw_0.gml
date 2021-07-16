@@ -1,1 +1,1 @@
-drawBlockText("( )", c_aqua)
+draw_crafting("(a)", "( )")

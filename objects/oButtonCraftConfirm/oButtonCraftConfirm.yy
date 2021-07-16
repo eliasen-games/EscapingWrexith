@@ -5,8 +5,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "oButtonMaster",
-    "path": "objects/oButtonMaster/oButtonMaster.yy",
+    "name": "oButtonSliderAnchor",
+    "path": "objects/oButtonSliderAnchor/oButtonSliderAnchor.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

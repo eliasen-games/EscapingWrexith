@@ -15,7 +15,7 @@ function drawStats(member, i, startX, startY, barWidth){
 	draw_rectangle(startX-4, startY-string_height(name)*1.25 - 4, startX + barWidth+4, startY-5, true)
 	draw_set_color(c_white)
 	draw_set_halign(fa_left)
-	draw_set_valign(fa_middle)
+	draw_set_valign(fa_bottom)
 	draw_text(startX, startY-16, name)
 	var str = string(round(member.base_strength))
 	var agl = string(round(member.base_agility))
@@ -25,10 +25,14 @@ function drawStats(member, i, startX, startY, barWidth){
 		agl += "+" + string(round(member.buff_slot.agility_bonus))
 		int += "+" + string(round(member.buff_slot.intelligence_bonus))
 	}
+	draw_set_halign(fa_left)
+	var nameWidth = string_width(name)*2
 	draw_set_color(c_red)
-	draw_text(startX+string_width(name)*2, startY-16, str)
-	draw_set_color(c_lime)
-	draw_text(startX+string_width(name)*4, startY-16, agl)
+	draw_text(startX + nameWidth, startY-16, str)
 	draw_set_color(c_aqua)
-	draw_text(startX+string_width(name)*6, startY-16, int)
+	draw_set_halign(fa_right)
+	draw_text(startX + barWidth - nameWidth, startY-16, int)
+	draw_set_halign(fa_middle)
+	draw_set_color(c_lime)
+	draw_text(startX + (barWidth - nameWidth)/2 + nameWidth/2, startY-16, agl)
 }

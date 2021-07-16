@@ -1,38 +1,39 @@
+if(resetPosition){
+	xTo = oPlayer.selected_character.x
+	yTo = oPlayer.selected_character.y
+	x = oPlayer.selected_character.x
+	y = oPlayer.selected_character.y
+	resetPosition = false
+}
+
 //CameraZoom
-if(mouse_wheel_down()){
-	if(camWidth < camMaxWidth or camHeight < camMaxHeight){
-		camWidth = camWidth * (1+zoomScaler)
-		camHeight = camHeight * (1+zoomScaler)
-	}
-} else if(mouse_wheel_up()){
-	if(camWidth > camMinWidth and camHeight > camMinHeight){
-		camWidth = camWidth * (1-zoomScaler)
-		camHeight = camHeight * (1-zoomScaler)
-	}
+camera_zoom()
+
+//Manually Move Camera
+if(input.in[IN.up]){
+	yTo -= camSpeed	
+}
+if(input.in[IN.down]){
+	yTo += camSpeed	
+}
+if(input.in[IN.left]){
+	xTo -= camSpeed	
+}
+if(input.in[IN.right]){
+	xTo += camSpeed	
 }
 
-
-
-
-
-if(follow != noone) {
-	if (xTo != noone and yTo != noone) {
-		//CameraMove
-		x += (xTo-x)/5
-		y += (yTo-y)/5
-		xTo = follow.x
-		yTo = follow.y
-	}
+//Camera Shake
+shake_camera(shakeFrames, maxShakeFrames, shakeFrequency, shakeIntensity, shakeDirection)
+if(shakeFrames >= 0){
+	shakeFrames--	
+} else{
+	set_camera_shake(0,1,1,0,0)	
 }
-else {
-	xTo = noone
-	yTo = noone
-}
+
+//Reposition Camera
+x += (xTo-x)/5
+y += (yTo-y)/5
 
 //Rebuild Matricies
-var vm  = matrix_build_lookat(x,y,-100, 
-							  x,y,0,
-							  0,1,0)
-var pm = matrix_build_projection_ortho(camWidth, camHeight, 1, 999999)
-camera_set_view_mat(camera,vm)
-camera_set_proj_mat(camera, pm)
+rebuild_matricies()

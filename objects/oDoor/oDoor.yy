@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sCellEmpty",
+    "path": "sprites/sCellEmpty/sCellEmpty.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -26,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Level Generation",
-    "path": "folders/Objects/Level Generation.yy",
+    "path": "folders/Objects/Behind the Scenes/Level Generation.yy",
   },
   "resourceVersion": "1.0",
   "name": "oDoor",

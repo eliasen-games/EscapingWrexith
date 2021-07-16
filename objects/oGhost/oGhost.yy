@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sCellEmpty",
+    "path": "sprites/sCellEmpty/sCellEmpty.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -29,7 +32,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Monsters",
-    "path": "folders/Objects/Monsters.yy",
+    "path": "folders/Objects/Entities/Monsters.yy",
   },
   "resourceVersion": "1.0",
   "name": "oGhost",

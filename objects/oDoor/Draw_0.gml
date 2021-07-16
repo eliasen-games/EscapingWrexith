@@ -1,6 +1,11 @@
-drawBlockText("[ ]", c_orange)
+draw_set_font(fEntity)
+if(touching){
+	drawBlockText("[ ]", c_orange)
+} else{
+	drawBlockText("[]", c_orange)
+}
 
-if(!position_meeting(x,y,oFog)){
+if(discovered){
 	if(playerProx){
 		draw_set_color(c_lime)
 	} else{

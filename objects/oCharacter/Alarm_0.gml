@@ -50,4 +50,6 @@ if (!ds_queue_empty(move_queue)) {
 		y = step_cell.y
 	}
 }
+//Destroy Fog
+destroy_fog(x,y,visibility)
 alarm[0] = (2.5 / agility) * room_speed

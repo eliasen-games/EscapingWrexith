@@ -1,3 +1,4 @@
+draw_set_font(fButtons)
 selected = false
 doAction = false
 

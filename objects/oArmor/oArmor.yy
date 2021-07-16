@@ -1,10 +1,16 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sCellEmpty",
+    "path": "sprites/sCellEmpty/sCellEmpty.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": true,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oCraftable",
+    "path": "objects/oCraftable/oCraftable.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

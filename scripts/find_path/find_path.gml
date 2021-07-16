@@ -1,5 +1,5 @@
 function find_path(start_cell, target_cell){
-	show_debug_message("finding path")
+	//show_debug_message("finding path")
 	var cell_size = start_cell.sprite_height
 	// initialize a list to hold cells that have already been discovered in the search,
 	// so they don't get searched more than once
@@ -44,7 +44,7 @@ function find_path(start_cell, target_cell){
 				ds_list_add(new_path, search_cell)
 				// if the search cell is the target cell, we're done!
 				if (search_cell == target_cell) {
-					show_debug_message("found path")
+					//show_debug_message("found path")
 					return new_path
 				}
 				// if there is a wall at the search location, skip it
@@ -57,6 +57,6 @@ function find_path(start_cell, target_cell){
 		}
 	}
 	// no path found
-	show_debug_message("could not find path")
+	//show_debug_message("could not find path")
 	return noone
 }
