@@ -19,7 +19,7 @@ function makeCells(width, height, spawnFog){
 				wall.edge = false	
 				//Create Fog
 				if(spawnFog){
-					//cell.fog = true
+					cell.fog = true
 				}
 			}
 			array_push(cell.contains, wall)
