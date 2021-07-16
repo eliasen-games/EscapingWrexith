@@ -5,4 +5,5 @@ function crafting_craft_weapon(crafter, character, xp){
 	var weapon = instance_create_layer(character.x, character.y, layer_get_id("Characters"), oWeapon)
 	weapon.damage_bonus = xp / 100
 	character.weapon_slot = weapon
+	calculate_buffs(character)
 }

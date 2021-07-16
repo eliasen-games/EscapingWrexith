@@ -1,5 +1,4 @@
 if(!oPlayer.paused){
-	calculate_buffs(id)
 	if (hp > strength) {
 		hp = strength
 	}
